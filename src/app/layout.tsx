@@ -15,7 +15,7 @@ import './_css/app.scss'
 const jost = Jost({
   subsets: ['latin'],
   weight: ['400', '700'],
-  variable: '--font-jost'
+  variable: '--font-jost',
 })
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
@@ -26,12 +26,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body>
+      <body className={jost.variable}>
         <Providers>
           <AdminBar />
           {/* @ts-expect-error */}
           <Header />
+          <main className='main'>
           {children}
+          </main>
           {/* @ts-expect-error */}
           <Footer />
         </Providers>
