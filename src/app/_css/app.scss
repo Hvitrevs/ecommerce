@@ -1,8 +1,6 @@
 
 
 
-
-
 @use './queries.scss' as *;
 @use './colors.scss' as *;
 @use './type.scss' as *;
@@ -51,12 +49,14 @@ body,
 
 body {
   font-family: var(--font-jost);
-  padding: 0;
   margin: 0;
+  padding: 0;
   color: var(--color-dark-500);
+
   display: flex;
-  flex-flow:column;
+  flex-flow: column;
 }
+
 .main {
   flex: 1 1 auto;
 }
@@ -107,13 +107,14 @@ p {
 
 ul,
 ol {
-margin: 0;
-padding: 0;
-list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
   color: var(--color-dark-500);
+  text-decoration: none;
 
   &:focus {
     opacity: .8;
