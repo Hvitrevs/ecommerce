@@ -11,7 +11,7 @@ const HeaderComponent = ({ header }: { header: Header }) => {
     <nav className={[classes.header]}>
       <Gutter className={classes.wrap}>
         <Link href="/">
-          <img src="/logo-black.svg" alt="logo"/>
+          <img src="/logo-black.svg" alt="logo" className={classes.logo}/>
         </Link>
       </Gutter>
     </nav>
