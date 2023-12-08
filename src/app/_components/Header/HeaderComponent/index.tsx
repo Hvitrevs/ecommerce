@@ -1,6 +1,8 @@
 import React from 'react'
 
-const HeaderComponent = () => {
+import { Header } from '../../../../payload/payload-types'
+
+const HeaderComponent = ({ header }: { header: Header }) => {
   return <div>HeaderComponent</div>
 }
 
