@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Header } from '../../../../payload/payload-types'
@@ -11,7 +12,7 @@ const HeaderComponent = ({ header }: { header: Header }) => {
     <nav className={[classes.header]}>
       <Gutter className={classes.wrap}>
         <Link href="/">
-          <img src="/logo-black.svg" alt="logo" className={classes.logo}/>
+          <Image src="/logo-black.svg" alt="logo" width={170} height={50} />
         </Link>
       </Gutter>
     </nav>
