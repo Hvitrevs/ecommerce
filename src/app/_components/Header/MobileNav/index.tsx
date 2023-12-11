@@ -1,11 +1,8 @@
 import React from 'react'
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
+const MobileNav = () => {
+  return <div>MobileNav</div>
 }
+export default MobileNav
 
-export default index
-
-
+//35:43 https://www.youtube.com/watch?v=3JUsg-WsU9o
