@@ -1,4 +1,4 @@
-# Payload E-Commerce Template
+#
 
 
 
