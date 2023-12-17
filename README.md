@@ -22,26 +22,7 @@ See the [Globals](https://payloadcms.com/docs/configuration/globals) docs for de
 
   Same as above but for the footer of your site.
 
-## Access control
-
-Basic role-based access control is setup to determine what users can and cannot do based on their roles, which are:
-
-- `admin`: They can access the Payload admin panel to manage your store. They can see all data and make all operations.
-- `customer`: They cannot access the Payload admin panel and can perform limited operations based on their user (see below).
-
-This applies to each collection in the following ways:
-
-- `users`: Only admins and the user themselves can access their profile. Anyone can create a user but only admins can delete users.
-- `products`: Everyone can access products, but only admins can create, update, or delete them. Paywall-enabled products may also have content that is only accessible to only users who have purchased the product. See [Paywall](#paywall) for more details.
-
-For more details on how to extend this functionality, see the [Payload Access Control](https://payloadcms.com/docs/access-control/overview#access-control) docs.
-
-## Shopping cart
-
-Logged-in users can have their shopping carts saved to their profiles as they shop. This way they can continue shopping at a later date or on another device. When not logged in, the cart can be saved to local storage and synced to Payload on the next login. This works by maintaining a `cart` field on the `user`:
-
-```ts
-{
+## 
   name: 'cart',
   label: 'Shopping Cart',
   type: 'object',
