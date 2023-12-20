@@ -3,10 +3,11 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
 
-import { noHeaderFooterUrls } from '../../../constants'
+import { inclusions, noHeaderFooterUrls } from '../../../constants'
 import { Gutter } from '../../Gutter'
 
 import classes from './index.module.scss'
+import Image from 'next/image'
 
 const FooterComponent = () => {
   const pathname = usePathname()
@@ -14,7 +15,19 @@ const FooterComponent = () => {
   return (
     <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ''}>
       <Gutter>
-        <ul className={classes.inslussions}></ul>
+        <ul className={classes.inslussions}>
+          {inclusions.map((inclusion, index) => (
+            <li key={inclusion.title}>
+              <Image
+                src={inclusion.icon}
+                alt={inclusion.title}
+                width={36}
+                height={36}
+                className={classes.icon}
+              />
+            </li>
+          ))}
+        </ul>
       </Gutter>
     </footer>
   )
