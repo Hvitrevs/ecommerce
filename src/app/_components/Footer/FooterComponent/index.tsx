@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { inclusions, noHeaderFooterUrls } from '../../../constants'
@@ -15,7 +16,7 @@ const FooterComponent = () => {
   return (
     <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ''}>
       <Gutter>
-        <ul className={classes.inslussions}>
+        <ul className={classes.inclusions}>
           {inclusions.map(inclusion => (
             <li key={inclusion.title}>
               <Image
@@ -25,14 +26,21 @@ const FooterComponent = () => {
                 height={36}
                 className={classes.icon}
               />
-              <h6 className={classes.title}>{inclusion.title}</h6>
+
+              <h5 className={classes.title}>{inclusion.title}</h5>
               <p>{inclusion.description}</p>
             </li>
           ))}
         </ul>
       </Gutter>
       <div className={classes.footer}>
-        
+        <Gutter>
+          <div className={classes.wrap}>
+            <Link href="/">
+              <h5 className={classes.text}>|l|HiTechLoLife©</h5>
+            </Link>
+          </div>
+        </Gutter>
       </div>
     </footer>
   )

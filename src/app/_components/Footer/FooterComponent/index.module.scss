@@ -14,7 +14,7 @@
 .inclusions {
   display: grid;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   padding: 0;
   grid-template-columns: repeat(4, 1fr);
   margin: 100px 0;
@@ -28,7 +28,7 @@
   }
 
   @include extra-small-break {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -82,4 +82,9 @@
 
 .hide {
   display: none;
+}
+.text {
+  color: white;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
 }
