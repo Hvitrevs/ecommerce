@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 import { Gutter } from '../../_components/Gutter'
 import { RenderParams } from '../../_components/RenderParams'
@@ -15,11 +16,18 @@ export default async function Login() {
   })
 
   return (
-    <Gutter className={classes.login}>
-      <RenderParams className={classes.params} />
-      <h1>Log in</h1>
-      <LoginForm />
-    </Gutter>
+    <section className={classes.login}>
+      <div className={classes.wrap}>
+        <Link href="/">
+          <h5 className={classes.text}>|l|HiTechLoLife</h5>
+        </Link>
+      </div>
+      <div className={classes.formWraooer}>
+        <div className={classes.formContainer}>
+          <RenderParams className={classes.params} />
+        </div>
+      </div>
+    </section>
   )
 }
 
