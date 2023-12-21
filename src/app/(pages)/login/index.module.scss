@@ -10,7 +10,6 @@
   background-image: url('/assets/images/image-1.svg');
 
 
-
   @include mid-break {
     grid-template-columns: 1fr;
     background-size: cover;
@@ -31,7 +30,6 @@
   gap: 16px;
   width: 100%;
   margin-bottom: 1rem;
-  filter: none;
 
   h3 {
     margin: 0;
