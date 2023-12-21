@@ -22,9 +22,10 @@ export default async function Login() {
           <h3 className={classes.text}>|l|HiTechLoLife</h3>
         </Link>
       </div>
-      <div className={classes.formWraooer}>
+      <div className={classes.formWrapper}>
         <div className={classes.formContainer}>
           <RenderParams className={classes.params} />
+
           <div className={classes.formTitle}>
             <h5>Hi there!👋</h5>
           </div>
