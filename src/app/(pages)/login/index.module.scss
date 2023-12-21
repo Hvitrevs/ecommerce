@@ -2,13 +2,14 @@
 
 .login {
   display: grid;
-  grid-template-columns: 1fr 45%;
+  grid-template-columns: 2fr 45%;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('/assets/images/image-1.svg');
-  position: relative;
+
+
 
   @include mid-break {
     grid-template-columns: 1fr;
@@ -19,7 +20,7 @@
   }
 
   p {
-    color: var(--color-gray-500);
+    color: white;
   }
 
 }
@@ -29,6 +30,8 @@
   align-items: center;
   gap: 16px;
   width: 100%;
+  margin-bottom: 1rem;
+  filter: none;
 
   h3 {
     margin: 0;
@@ -49,6 +52,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  backdrop-filter: blur(30px);
 
   @include mid-break {
     justify-content: flex-start;
@@ -61,10 +65,13 @@
   width: 100%;
   padding: 50px;
   border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.218);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 
   @include mid-break {
     backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.761);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   }
 
