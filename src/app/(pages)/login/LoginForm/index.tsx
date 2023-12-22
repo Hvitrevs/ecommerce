@@ -48,7 +48,7 @@ const LoginForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
       <Message error={error} className={classes.message} />
-      <Input
+      <Input className={classes.message}
         name="email"
         label="Email Address"
         required

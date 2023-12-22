@@ -6,17 +6,33 @@
   flex-direction: column;
   gap: calc(var(--base) / 2);
   align-items: flex-start;
-  width: 80%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.157);
 
   @include mid-break {
     width: 100%;
   }
 }
 
-.submit {
-  margin-top: calc(var(--base) / 2);
+.submit{
+  background: linear-gradient(90deg, rgb(255, 187, 227) 0%, rgb(146, 227, 249) 100%);
+  border:none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  width:100%;
 }
 
+.email {
+  background: rgb(255,222,250);
+}
 .message {
   margin-bottom: var(--base);
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.1rem;
+  font-size: 14px;
 }
