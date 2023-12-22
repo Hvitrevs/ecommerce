@@ -81,13 +81,13 @@
   padding: 4rem;
   border-radius: 10px;
   backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0.309);
+  background: linear-gradient(90deg, rgba(255, 250, 254, 0.564) 0%, rgba(204, 244, 255, 0.104) 100%);
   box-shadow: 3px 5px 5px 1px rgba(5, 51, 104, 0.081);
 
   @include mid-break {
     width: 100%;
     backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.33);
+    background: linear-gradient(90deg, rgba(255, 250, 254, 0.659) 0%, rgba(145, 190, 203, 0.223) 100%);
     box-shadow: 3px 5px 5px 1px rgba(5, 51, 104, 0.081);
   }
 

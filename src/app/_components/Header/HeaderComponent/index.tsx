@@ -12,7 +12,6 @@ import { HeaderNav } from '../Nav'
 
 import classes from './index.module.scss'
 
-
 const HeaderComponent = ({ header }: { header: Header }) => {
   const pathname = usePathname()
   return (

@@ -9,7 +9,7 @@ module.exports = {
   colors: {
     base0: 'rgb(255, 255, 255)',
     base100: 'rgb(235, 235, 235)',
-    base500: 'rgb(128, 128, 128)',
+    base500: 'rgb(180, 179, 179)',
     base850: 'rgb(34, 34, 34)',
     base1000: 'rgb(0, 0, 0)',
     error500: 'rgb(255, 111, 118)',

@@ -7,11 +7,10 @@
 .input {
   width: 100%;
   font-family: system-ui;
-  border-radius: 0;
-  box-shadow: none;
   border: none;
+  box-shadow: none;
+  border-radius: 5px;
   background: none;
-  background-color: var(--theme-elevation-100);
   color: var(--theme-elevation-1000);
   height: calc(var(--base) * 2);
   line-height: calc(var(--base) * 2);
@@ -21,13 +20,14 @@
   &:focus {
     border: none;
     outline: none;
+    background-color: rgba(255, 255, 255, 0.183);
   }
 
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus {
-    -webkit-text-fill-color: var(--theme-text);
-    -webkit-box-shadow: 0 0 0px 1000px var(--theme-elevation-150) inset;
+    -webkit-text-fill-color: rgb(190, 86, 203);
+    box-shadow: 0 0 20px rgba(57, 142, 221, 0.263) inset;
     transition: background-color 5000s ease-in-out 0s;
   }
 }
@@ -38,7 +38,7 @@
 
 :global([data-theme="dark"]) {
   .input {
-    background-color: var(--theme-elevation-150);
+    background-color: rgba(110, 160, 210, 0.27);
   }
 }
 
