@@ -5,9 +5,12 @@ import classes from './index.module.scss'
 
 const LogoAnima = () => {
   return (
-    <Link href="/">
-      <h3 className={classes.text}>|l|HiTechLoLife</h3>
-    </Link>
+    <div className={classes.wrap}>
+      <Link href="/">
+        <h3 className={classes.text}>|l|HiTechLoLife</h3>
+        <span className={classes.parag}>Your Favourite Tech Store🕹️</span>
+      </Link>
+    </div>
   )
 }
 

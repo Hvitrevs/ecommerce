@@ -1,15 +1,99 @@
-.text{
-  font-size: 44px;
-  font-weight: bold;
-  background: linear-gradient(90deg, cyan, magenta);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  max-width: 10px;
-  white-space: nowrap; /* Prevent line break */
-  animation: textGradient 5s linear infinite;
+@import '../../_css/common';
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
 }
-@keyframes textGradient {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+.text {
+  font-size: 42px;
+  letter-spacing: 0.1rem;
+  background: linear-gradient(to right, #5eb7b9, #ff93d0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap; 
+  overflow: hidden; 
+  border-right: 2px solid #33333389; /* Imitate the typing cursor */
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+
+  @include mid-break {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    font-size: 27px;
+    
+  }
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 8em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(233, 174, 198, 0.75);}
+to{border-right-color: transparent;}
+}
+
+.parag {
+  color: rgba(163, 66, 151, 0.548);
+  margin-top: 25px;
+  letter-spacing: 0.03rem;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadein 15s;
+  -moz-animation: fadein 15s; /* Firefox */
+  -webkit-animation: fadein 15s; /* Safari and Chrome */
+  -o-animation: fadein 15s; /* Opera */
+
+  @include mid-break {
+    margin-left: 3rem;
+    margin-top: 5rem;
+    font-size: 0.9rem;
+    
+  }
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:0;
+  }
+  to {
+    opacity:1;
+}
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0;
+}
+to {
+    opacity:0;
+}
+to {
+  opacity:1;
+}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+}
+to {
+    opacity:0;
+}
+to {
+  opacity:1;
+}
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0;
+}
+to {
+    opacity:0;
+}
+to {
+  opacity:1;
+}
 }
