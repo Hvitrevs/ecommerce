@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Gutter } from '../../_components/Gutter'
+import LogoAnima from '../../_components/LogoAnima'
 import { RenderParams } from '../../_components/RenderParams'
 import { getMeUser } from '../../_utilities/getMeUser'
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
@@ -19,9 +20,7 @@ export default async function Login() {
   return (
     <section className={classes.login}>
       <div className={classes.wrap}>
-        <Link href="/">
-          <h3 className={classes.text}>|l|HiTechLoLife</h3>
-        </Link>
+        <LogoAnima />
       </div>
       <div className={classes.formWrapper}>
         <div className={classes.formContainer}>

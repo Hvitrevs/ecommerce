@@ -1,0 +1,15 @@
+.text{
+  font-size: 44px;
+  font-weight: bold;
+  background: linear-gradient(90deg, cyan, magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  max-width: 10px;
+  white-space: nowrap; /* Prevent line break */
+  animation: textGradient 5s linear infinite;
+}
+@keyframes textGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
