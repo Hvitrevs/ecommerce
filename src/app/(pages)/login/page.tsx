@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Gutter } from '../../_components/Gutter'
@@ -20,6 +21,7 @@ export default async function Login() {
       <div className={classes.wrap}>
         <Link href="/">
           <h3 className={classes.text}>|l|HiTechLoLife</h3>
+          <h6 className={classes.text1}>Your Convinient Gadget Store</h6>
         </Link>
       </div>
       <div className={classes.formWrapper}>
