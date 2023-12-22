@@ -41,10 +41,10 @@ to{border-right-color: transparent;}
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-  animation: fadein 15s;
-  -moz-animation: fadein 15s; /* Firefox */
-  -webkit-animation: fadein 15s; /* Safari and Chrome */
-  -o-animation: fadein 15s; /* Opera */
+  animation: fadein 22s;
+  -moz-animation: fadein 22s; /* Firefox */
+  -webkit-animation: fadein 22s; /* Safari and Chrome */
+  -o-animation: fadein 22s; /* Opera */
 
   @include mid-break {
     margin-left: 3rem;
