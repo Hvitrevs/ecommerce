@@ -1,9 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
-import Image from 'next/image'
-import Link from 'next/link'
 
-import { Gutter } from '../../_components/Gutter'
 import LogoAnima from '../../_components/LogoAnima'
 import { RenderParams } from '../../_components/RenderParams'
 import { getMeUser } from '../../_utilities/getMeUser'
@@ -29,7 +26,7 @@ export default async function Login() {
           <div className={classes.formTitle}>
             <h5>Hi there!👋</h5>
           </div>
-          <p>Enter your login</p>
+          <p>Enter your credentials</p>
           <LoginForm />
         </div>
       </div>

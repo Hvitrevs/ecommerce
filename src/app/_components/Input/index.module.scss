@@ -9,7 +9,9 @@
   font-family: system-ui;
   border: none;
   box-shadow: none;
-  background: linear-gradient(90deg, rgba(255,225,248,1) 0%, rgba(204,244,255,1) 100%);
+  background: linear-gradient(90deg, rgba(255, 250, 254, 0.564) 0%, rgba(204, 244, 255, 0.104) 100%);
+  box-shadow: 10px 10px 40px rgba(30, 38, 156, 0.324),
+  0px 0px 30px rgb(255, 228, 248);
   border-radius: 5px;
   color: var(--theme-elevation-1000);
   height: calc(var(--base) * 2);
@@ -27,8 +29,8 @@
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus {
     -webkit-text-fill-color: rgb(190, 86, 203);
-    box-shadow: 10px 10px 40px rgba(30, 38, 156, 0.218),
-    0px 0px 30px rgb(255, 255, 255);
+    box-shadow: 10px 10px 40px rgba(30, 118, 156, 0.324),
+    0px 0px 30px rgb(246, 222, 240);
     transition: background-color 5000s ease-in-out 0s;
   }
 }
