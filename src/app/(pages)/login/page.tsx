@@ -21,7 +21,6 @@ export default async function Login() {
       <div className={classes.wrap}>
         <Link href="/">
           <h3 className={classes.text}>|l|HiTechLoLife</h3>
-          <h6 className={classes.text1}>Your Convinient Gadget Store</h6>
         </Link>
       </div>
       <div className={classes.formWrapper}>

@@ -2,7 +2,7 @@
 
 .login {
   display: grid;
-  grid-template-columns: 2fr 95%;
+  grid-template-columns: 1fr 75%;
   height: 100vh;
   background: linear-gradient(90deg, rgba(255,225,248,1) 0%, rgba(204,244,255,1) 100%);
 
@@ -22,22 +22,24 @@
   align-items: center;
   justify-content: center;
   text-align: center; 
-  height: 30vh; 
+  margin-left: 50px;
+  
+  @include mid-break {
+    height: 10vh; 
+    max-width: 50vw;
+  }
+
 }
 .wrap .text {
-  font-size: 54px;
+  font-size: 44px;
   font-weight: bold; 
   color: #333;
-  padding: 20px;
   max-width: 10px; 
+  @include mid-break {
+    font-size: 24px;
+  }
 }
-.wrap .text1 {
-  font-size: 24px;
-  font-weight: bold; 
-  color: #333;
-  padding: 20px;
-  max-width: 40px; /* Set a maximum width for the text container */
-}
+
 
 
 
@@ -45,7 +47,6 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  width: 100%;
 
   h3 {
     margin: 0;
@@ -59,25 +60,11 @@
 }
 
 
-.logo {
-  margin: 60px;
-  width: 30%;
-  min-width: 150px;
-  z-index: 10;
-
-  @include mid-break {
-    width: 45%;
-    margin: 10px;
-  }
-}
-
 .formWrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 50vw;
   
 
   @include mid-break {
@@ -87,17 +74,17 @@
 }
 
 .formContainer {
-  max-width: 600px;
-  width: 100%;
-  padding: 50px;
+  max-width: 500px;
+  width: 50%;
+  padding: 4rem;
   border-radius: 10px;
   backdrop-filter: blur(30px);
   background-color: rgba(255, 255, 255, 0.218);
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  box-shadow: 3px 5px 5px 1px rgba(5, 51, 104, 0.081);
 
   @include mid-break {
     backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.761);
+    background-color: rgba(255, 255, 255, 0.33);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   }
 
