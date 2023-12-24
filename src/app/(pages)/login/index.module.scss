@@ -26,7 +26,9 @@
   
   @include mid-break {
     height: 10vh; 
-    max-width: 30vw;
+    margin-left: 2rem;
+    align-items: start;
+    justify-content: start;
   }
 
 }
@@ -53,7 +55,7 @@
 
     @include mid-break {
       font-size: 34px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
   }
 

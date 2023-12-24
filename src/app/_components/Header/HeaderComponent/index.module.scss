@@ -1,6 +1,12 @@
 @import "../../../_css/common";
 .header {
   padding: 10px 0;
+  @include mid-break {
+    padding: 0px 0;
+    font-weight: 500;
+    // position: fixed;
+    // top: 0;
+  }
 }
 
 .wrap{
@@ -12,6 +18,7 @@
   @include mid-break {
     font-weight: 500;
     font-size: smaller;
+
   }
 
 
@@ -21,6 +28,7 @@
   margin-left: 4rem;
   width: 170px;
   @include mid-break {
+    margin-top: -20px;
     margin-left: 0;
   }
 }

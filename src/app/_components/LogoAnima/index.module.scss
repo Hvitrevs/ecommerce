@@ -15,12 +15,12 @@
   white-space: nowrap; 
   overflow: hidden; 
   border-right: 3px solid #33333389; /* Imitate the typing cursor */
-  animation: typewriter 2s steps(44) 1s 1 normal both,
+  animation: typewriter 2s steps(34) 1s 1 normal both,
   blinkTextCursor 700ms steps(44) infinite normal;
 
   @include mid-break {
     margin-left: 3rem;
-    margin-top: 0.8rem;
+    margin-top: 3rem;
     font-size: 27px;
     
   }
@@ -35,9 +35,9 @@ to{border-right-color: transparent;}
 }
 
 .parag {
-  color: rgba(163, 66, 151, 0.548);
+  color: rgba(172, 117, 165, 0.797);
   margin-top: 25px;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.05rem;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -47,10 +47,8 @@ to{border-right-color: transparent;}
   -o-animation: fadein 22s; /* Opera */
 
   @include mid-break {
-    margin-left: 2rem;
-    margin-top: 1rem;
+    margin-left: 2.7rem;
     font-size: 0.9rem;
-    
   }
 }
 @keyframes fadein {
