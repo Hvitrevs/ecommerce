@@ -35,13 +35,11 @@
 }
 
 %h3 {
- 
   font-size: 32px;
   line-height: 40px;
   font-weight: bold;
 
   @include mid-break {
- 
     font-size: 26px;
     line-height: 32px;
   }

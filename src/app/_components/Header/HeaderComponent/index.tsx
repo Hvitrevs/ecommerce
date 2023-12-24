@@ -21,7 +21,9 @@ const HeaderComponent = ({ header }: { header: Header }) => {
         .join(' ')}
     >
       <Gutter className={classes.wrap}>
-        <LogoAnima />
+        <div className={classes.logo}>
+          <LogoAnima />
+        </div>
         <HeaderNav header={header} />
       </Gutter>
     </nav>

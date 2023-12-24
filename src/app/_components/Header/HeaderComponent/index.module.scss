@@ -1,17 +1,28 @@
+@import "../../../_css/common";
 .header {
   padding: 10px 0;
 }
 
 .wrap{
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: calc(var(--base) / 2) var(--base)
+  flex-wrap:wrap-reverse;
+  gap: calc(var(--base) / 2) var(--base);
+  @include mid-break {
+    font-weight: 500;
+    font-size: smaller;
+  }
+
+
 }
 
 .logo {
+  margin-left: 4rem;
   width: 170px;
+  @include mid-break {
+    margin-left: 0;
+  }
 }
 
 .hide {
