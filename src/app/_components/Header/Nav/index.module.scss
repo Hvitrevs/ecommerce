@@ -15,8 +15,7 @@
 }
 
 .button {
-
-
+  
   @include mid-break {
     margin-left: 9rem;
     width:60px;
@@ -24,10 +23,10 @@
     
     
   }
-
 }
 .button .Login{
-  color: rgb(56, 77, 155);
+    background: rgb(49, 205, 171); /* Change color on click */
+    color: rgb(255, 255, 255);
 }
 .hide {
   opacity: 0;

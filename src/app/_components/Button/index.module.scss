@@ -26,8 +26,10 @@
 }
 
 .button:active {
-  background: rgba(12, 145, 136, 0.624); /* Change color on click */
+  background: rgb(49, 205, 171); /* Change color on click */
   color: rgb(255, 255, 255);
+  box-shadow: 7px 7px 15px rgba(102, 255, 150, 0.729),
+  0px 0px 15px rgba(2, 217, 255, 0.612);
 }
 
 .content {

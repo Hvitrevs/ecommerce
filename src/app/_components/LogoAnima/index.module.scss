@@ -9,18 +9,18 @@
 .text {
   font-size: 38px;
   letter-spacing: 0.1rem;
-  background: linear-gradient(to right, #90d7f5, #ff93d0);
+  background: linear-gradient(to right, #6be1ff, #ff93d0);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap; 
   overflow: hidden; 
-  border-right: 2px solid #33333389; /* Imitate the typing cursor */
+  border-right: 3px solid #33333389; /* Imitate the typing cursor */
   animation: typewriter 2s steps(44) 1s 1 normal both,
-  blinkTextCursor 500ms steps(44) infinite normal;
+  blinkTextCursor 700ms steps(44) infinite normal;
 
   @include mid-break {
     margin-left: 3rem;
-    margin-top: 3rem;
+    margin-top: 0.8rem;
     font-size: 27px;
     
   }
@@ -47,8 +47,8 @@ to{border-right-color: transparent;}
   -o-animation: fadein 22s; /* Opera */
 
   @include mid-break {
-    margin-left: 3rem;
-    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
     font-size: 0.9rem;
     
   }
