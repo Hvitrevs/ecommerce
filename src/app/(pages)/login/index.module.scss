@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 75%;
   height: 100vh;
-  background: linear-gradient(90deg, rgba(255,225,248,1) 0%, rgba(204,244,255,1) 100%);
+  background-image: linear-gradient(90deg, rgba(255,225,248,1) 0%, rgba(204,244,255,1) 100%);
 
   @include mid-break {
     grid-template-columns: 1fr;
@@ -24,6 +24,7 @@
   margin-left: 100px;
   height: 50vh;
   
+
   @include mid-break {
     height: 10vh; 
     margin-left: 2rem;
@@ -37,8 +38,9 @@
   font-weight: bold; 
   color: #502b6075;
   max-width: 10px; 
+
   @include mid-break {
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 
@@ -55,7 +57,7 @@
 
     @include mid-break {
       font-size: 34px;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
   }
 
@@ -85,6 +87,11 @@
   background: linear-gradient(90deg, rgba(255, 250, 254, 0.564) 0%, rgba(204, 244, 255, 0.104) 100%);
   box-shadow: 3px 9px 15px 2px rgba(5, 51, 104, 0.081);
 
+  
+  @include large-break  {
+    max-width: 400px;
+    padding: 30px;
+  }
   @include mid-break {
     width: 100%;
     backdrop-filter: blur(30px);
@@ -93,7 +100,8 @@
   }
 
   @include small-break {
-    padding: 30px;
+    width: 90%;
+    padding: 35px;
   }
 }
 
