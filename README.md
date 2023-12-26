@@ -1,5 +1,5 @@
 ##Installed
-<br>
+
         "cross-env": "^7.0.3",
         
         "dotenv": "^8.2.0",
