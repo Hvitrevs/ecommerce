@@ -111,7 +111,7 @@ const CreateAccountForm: React.FC = () => {
       />
       <Button
         type="submit"
-        label={loading ? 'Processing' : 'Create Account'}
+        label={loading ? 'Sugning you up . . .' : 'Sign Up'}
         disabled={loading}
         appearance="primary"
         className={classes.submit}
