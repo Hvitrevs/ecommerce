@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 
 import { Gutter } from '../../_components/Gutter'
 import LogoAnima from '../../_components/LogoAnima'
+import { RenderParams } from '../../_components/RenderParams'
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
 import { RecoverPasswordForm } from './RecoverPasswordForm'
 

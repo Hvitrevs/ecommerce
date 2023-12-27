@@ -1,17 +1,10 @@
 @import "../../../_css/common";
 
 .error {
-  color: red;
+  color: rgb(255, 114, 114);
   margin-bottom: 15px;
 }
 
-.formWrapper {
-  width: 66.66%;
-
-  @include mid-break {
-    width: 100%;
-  }
-}
 
 .submit {
   margin-top: var(--base);
