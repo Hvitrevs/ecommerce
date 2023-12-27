@@ -1,5 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
 
 import { Gutter } from '../../_components/Gutter'
 import LogoAnima from '../../_components/LogoAnima'
@@ -17,10 +19,15 @@ export default async function RecoverPassword() {
       </div>
       <div className={classes.formWrapper}>
         <div className={classes.formContainer}>
+          <RenderParams className={classes.params} />
           <div className={classes.formTitle}>
             <h3>Recover Password</h3>
           </div>
           <RecoverPasswordForm />
+          <Link href="/login" className={classes.backLink}>
+            <Image src="/assets/icons/arrow-left.svg" alt="left arrow" width={24} height={24} />
+            <p>Back to login page</p>
+          </Link>
         </div>
       </div>
     </section>

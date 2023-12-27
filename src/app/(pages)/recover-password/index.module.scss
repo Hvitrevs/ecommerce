@@ -104,4 +104,21 @@
     padding: 35px;
   }
 }
+.backLink {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color:rgb(255, 143, 143);
+  font-size: 15px;
+  font-weight: 600;
+
+  p {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    color:rgb(27, 20, 20);
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
 
