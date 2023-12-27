@@ -13,14 +13,6 @@ import { HeaderNav } from '../Nav'
 import classes from './index.module.scss'
 
 const HeaderComponent = ({ header }: { header: Header }) => {
-  const [sticky, setSticky] = useState(false)
-  useEffect(() => {
-    const onScroll = () => {
-      window.scrollY > 50 ? setSticky(true) : setSticky(false)
-    }
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
   const pathname = usePathname()
   return (
     <nav
