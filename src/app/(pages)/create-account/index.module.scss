@@ -24,11 +24,12 @@
   height: 50vh;
   
 
-  @include mid-break {
-    height: 10vh; 
-    margin-left: 2rem;
-    align-items: start;
-    justify-content: start;
+  @include mid-break { 
+    height: 5vh;
+    margin-left: -4rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
   }
 
 }
@@ -52,8 +53,8 @@
     margin: 0;
 
     @include mid-break {
-      font-size: 34px;
-      margin-bottom: 6px;
+      font-size: 20px;
+      
     }
   }
 }
@@ -69,7 +70,7 @@
 
   @include mid-break {
     justify-content: flex-start;
-    padding: 10px;
+    padding: 15px;
   }
 }
 
@@ -85,21 +86,15 @@
   
   @include large-break  {
     max-width: 400px;
-    padding: 30px;
+    padding: 15px;
   }
   @include mid-break {
     width: 100%;
-    backdrop-filter: blur(30px);
-    background: linear-gradient(90deg, rgba(255, 250, 254, 0.659) 0%, rgba(145, 190, 203, 0.223) 100%);
-    box-shadow: 3px 5px 5px 1px rgba(5, 51, 104, 0.081);
   }
 
   @include small-break {
-    width: 90%;
-    padding: 35px;
+    width: 300px;
+    padding: 15px;
   }
 }
 
-.params {
-  margin-top: var(--base);
-}
