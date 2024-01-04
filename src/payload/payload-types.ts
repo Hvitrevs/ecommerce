@@ -171,7 +171,8 @@ export interface Media {
 }
 export interface Category {
   id: string;
-  title?: string;
+  title: string;
+  media?: string | Media;
   parent?: string | Category;
   breadcrumbs?: {
     doc?: string | Category;
