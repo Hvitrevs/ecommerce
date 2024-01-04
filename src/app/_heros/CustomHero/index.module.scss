@@ -14,10 +14,11 @@
 .heroWrapper {
   background-color: var(--color-dark-50);
   width: 100%;
-  max-width: 1560px;
+  max-width: 1260px;
   max-height: 884px;
   display: flex;
   align-items: center;
+  background-color: transparent;
 
   background-size: cover;
   background-position: revert;
@@ -26,17 +27,19 @@
   @include small-break {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
   }
 }
-
 .heroTextBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 15% var(--gutter-h);
   width: 100%;
+  letter-spacing: 0.03rem;
 
   @include mid-break {
+    color: rgb(112, 8, 8);
     padding: 10% 30px;
   }
 
@@ -73,6 +76,7 @@
     }
   }
 }
+
 
 .links {
   list-style: none;
