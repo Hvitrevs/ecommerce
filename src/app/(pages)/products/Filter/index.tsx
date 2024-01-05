@@ -35,12 +35,12 @@ const Filters = ({ categories }: { categories: Category[] }) => {
 
             return (
               <Checkbox
-              key={category.id}
-              label={category.title}
-              value={category.id}
-              isSelected={isSelected}
-              onClickHandler={handleCategories}
-            />
+                key={category.id}
+                label={category.title}
+                value={category.id}
+                isSelected={isSelected}
+                onClickHandler={handleCategories}
+              />
             )
           })}
         </div>
