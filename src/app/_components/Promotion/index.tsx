@@ -12,7 +12,7 @@ const Promotion = () => {
   })
 
   const targetDate = new Date()
-  targetDate.setDate(targetDate.getDate() + 3)
+  targetDate.setDate(targetDate.getDate() + 1)
 
   useEffect(() => {
     const timerInterval = setInterval(() => {
@@ -28,7 +28,6 @@ const Promotion = () => {
 
       if (timeDifference === 0) {
         clearInterval(timerInterval)
-        // You can add code here to handle what happens when the target date is reached.
       }
     }, 1000)
 
@@ -42,8 +41,8 @@ const Promotion = () => {
       <div className={classes.textBox}>
         <h3 className={classes.title}>Deals of the Month</h3>
         <p>
-          Get ready for a shopping experience like never before with our Deals of the Month! Every
-          purchase comes with exclusive perks and offers, making this month a celebration of savvy
+          Embark on an extraordinary shopping journey with our Deals of the Month! Every purchase
+          brings exclusive perks and enticing offers, turning this month into a celebration of smart
           choices and amazing deals. Don't miss out! 🎁🛒
         </p>
 
