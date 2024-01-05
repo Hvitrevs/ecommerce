@@ -3,7 +3,7 @@
 import React from 'react'
 
 import { Category } from '../../../../payload/payload-types'
-// import { Checkbox } from '../../../_components/Checkbox'
+import { Checkbox } from '../../../_components/Checkbox'
 import { HR } from '../../../_components/HR'
 // import { RadioButton } from '../../../_components/Radio'
 import { useFilter } from '../../../_providers/Filter'
@@ -33,7 +33,15 @@ const Filters = ({ categories }: { categories: Category[] }) => {
           {categories.map(category => {
             const isSelected = categoryFilters.includes(category.id)
 
-            return <h1>s</h1>
+            return (
+              <Checkbox
+              key={category.id}
+              label={category.title}
+              value={category.id}
+              isSelected={isSelected}
+              onClickHandler={handleCategories}
+            />
+            )
           })}
         </div>
         <HR className={classes.hr} />
