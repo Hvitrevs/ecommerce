@@ -47,7 +47,7 @@ const Filters = ({ categories }: { categories: Category[] }) => {
         <HR className={classes.hr} />
         <h6 className={classes.title}>Sort By</h6>
         <div className={classes.categories}>
-        <RadioButton
+          <RadioButton
             label="Latest"
             value="-createdAt"
             isSelected={sort === '-createdAt'}
